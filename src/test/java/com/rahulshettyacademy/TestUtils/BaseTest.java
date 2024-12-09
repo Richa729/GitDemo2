@@ -47,6 +47,7 @@ public class BaseTest extends AppiumUtils {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\rahulshettyacademy\\testData\\data.properties");
 		String address = prop.getProperty("ipAddress") != null ? System.getProperty("ipAddress") : prop.getProperty("ipAddress");
 		prop.load(fis);
+		prop.load(fis);
 		//String ipAddress = prop.getProperty("ipAddress");
 		String port = prop.getProperty("port");
 		String androidDeviceName=prop.getProperty("AndroidDeviceName");
